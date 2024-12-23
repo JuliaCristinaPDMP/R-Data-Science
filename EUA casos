@@ -1,0 +1,31 @@
+# Inserindo as bibliotecas do curso e as informações dos dados do EUA
+library(dslabs)
+data(murders)
+
+# classe do objeto
+class(murders)
+# estrutura do objeto 
+str(murders)
+# primeiras 6 linhas do Dataset
+head(murders)
+
+# coluna da população com acess operator
+murders$population
+# colocando o nome das variaveis do Dataset
+names(murders)
+# quantas entradas tem no vetor
+pop <- murders$population
+length(pop)
+# o vetor pode ser um char ou ou int
+class(pop)
+class(murders$state)
+
+# vetores lógicos são TRUE ou FALSE
+z <- 3 == 2
+z
+class(z)
+
+# factor é uma outra classe
+class(murders$region)
+# niveis de factor
+levels(murders$region)
