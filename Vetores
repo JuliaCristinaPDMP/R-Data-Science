@@ -1,0 +1,21 @@
+# criar o vetor que une as duas cadeias de char e int (concatenar)
+codes <- c(380, 124, 818)
+country <- c("italy", "canada", "egypt")
+
+# nomeia os elementos do vetor (ambas dão o mesmo resultado)
+codes <- c(italy = 380, canada = 124, egypt = 818)
+codes <- c("italy" = 380, "canada" = 124, "egypt" = 818)
+
+# também da pra nomear com a função names()
+codes <- c(380, 124, 818)
+country <- c("italy","canada","egypt")
+names(codes) <- country
+
+# acessar o elemento especifico do vetor com []
+codes[2]
+codes[c(1,3)]
+codes[1:2]
+
+# se as entradas de um vetor foram nomeadas, você tambem consegue acessar ela no vetor pelo nome
+codes["canada"]
+codes[c("egypt","italy")]
