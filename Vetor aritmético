@@ -1,0 +1,8 @@
+# Função pra achar o estado com a maior população
+murders$state[which.max(murders$population)]
+
+# como obter os dados de casos
+murder_rate <- murders$total / murders$population * 100000
+
+# ordenando os estados pelo dado dos casos por estado de forma decrescente
+murders$state[order(murder_rate, decreasing=TRUE)]
