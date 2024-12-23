@@ -1,0 +1,10 @@
+# resolvendo x² + x - 1 = 0
+
+# valores das variaveis
+a <-1
+b <-1
+c <--1
+
+# resolvendo a equação
+(-b + sqrt(b^2 - 4*a*c))/(2*a)
+(-b - sqrt(b^2 - 4*a*c))/(2*a)
